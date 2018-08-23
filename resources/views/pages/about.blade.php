@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default',['title'=> 'About'])
 
 @section('content')
     <div class="container">
@@ -15,7 +15,7 @@
            </p>
        </div>
    </div>
-        <p>feel free to help to improve the <a href="#">source code</a></p>
+        <p>feel free to help to improve the <a href="https://github.com/siiamine/laracarte-siiamine">source code</a></p>
         <hr>
         <h2>What is Laramap?</h2>
         <p>Laramap is the website by wish Laracarte was inspired</p>
