@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <h2>What is Laracarte</h2>
-        <p> Laracarte is a clone app of <a href="https://laramap.com">Laramap.com </a> </p>
+        <h2>What is {{config('app.name')}}</h2>
+        <p> {{config('app.name')}} is a clone app of <a href="https://laramap.com">Laramap.com </a> </p>
 
    <div class="row">
        <div class="col-md-6">
@@ -15,13 +15,13 @@
            </p>
        </div>
    </div>
-        <p>feel free to help to improve the <a href="https://github.com/siiamine/laracarte-siiamine">source code</a></p>
+        <p>feel free to help to improve the <a href="https://github.com/siiamine/{{config('app.name')}}-siiamine">source code</a></p>
         <hr>
         <h2>What is Laramap?</h2>
-        <p>Laramap is the website by wish Laracarte was inspired</p>
+        <p>Laramap is the website by wish {{config('app.name')}} was inspired</p>
         <p>more info <a href="https://">here</a> </p>
         <hr>
-        <h2> wich tools and services are used in laracarte?</h2>
+        <h2> wich tools and services are used in {{config('app.name')}}?</h2>
         <p>
             <ul>
                 <li>laravel</li>

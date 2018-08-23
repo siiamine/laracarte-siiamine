@@ -1,6 +1,6 @@
 <footer class="text-center">
     <p>
-        &copy; {{date('Y')}}  &middot; Laracarte by <a href="https://twitter.com/estmo">@estmo</a>
+        &copy; {{date('Y')}}  &middot; {{config('app.name')}} by <a href="https://twitter.com/estmo">@estmo</a>
         &dash; A <a href="https://laramap.com">Laramap </a> clone app
     </p>
 
