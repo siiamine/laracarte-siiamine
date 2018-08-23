@@ -23,3 +23,8 @@ Route::get('/about', [
     'uses'=>'PagesController@about'
 
 ]);
+Route::get('/contact', [
+    'as'=>'contact_path',
+    'uses'=>'ContactController@create'
+
+]);
