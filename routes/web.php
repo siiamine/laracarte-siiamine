@@ -11,6 +11,8 @@
 |
 */
 
+use App\Mail\ContactMessageCreated;
+
 Route::get('/', [
     'as'=>'root_path',
     'uses'=>'PagesController@home'
@@ -28,3 +30,13 @@ Route::get('/contact', [
     'uses'=>'ContactController@create'
 
 ]);
+Route::post('/contact', [
+    'as'=>'contact_path',
+    'uses'=>'ContactController@store'
+
+]);
+
+Route::get('/test-email', function (){
+    return new ContactMessageCreated('amine SEGHIR','thelastmino@gmail.com','je vous remercie pour laracarte');
+
+});
